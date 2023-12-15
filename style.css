@@ -27,13 +27,26 @@ p {
 
 .body-section {
     width: 100%;
-    height: 100vh;
-}
-.body-section > div {
+    height: 100%;
+    min-height: fit-content;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.body-section .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+.body-section > div {
+    /* margin-top: 100px; */
 }
 
 /* ##### ABOUT ##### */
@@ -43,18 +56,18 @@ p {
 .about .presentation {
     max-width: 60vw;
 }
-#pp {
-    width: 25vh;
-    height: 25vh;
-    border-radius: 100%;
+.about-pp {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 36px;
 }
-#name {
+.about-name {
     font-size: 4em;
     margin: 0;
 }
-#short-description {
+.about-short-description {
     color: var(--gray);
     font-style: italic;
     font-size: 1em;
@@ -63,6 +76,12 @@ p {
 /* ##### CAREER ##### */
 .career {
     background-color: var(--main-color-gradient-1);
+}
+.career-timeline > div {
+    border: 1px solid black;
+}
+.career-list {
+    text-align: left;
 }
 
 /* ##### SKILLS ##### */
@@ -80,7 +99,7 @@ p {
     background-color: var(--main-color-gradient-4);
 }
 
-/* ##### FOOTER ##### */
+/* ##### ABOUT ##### */
 footer {
     width: 100%;
     height: 25vh;
