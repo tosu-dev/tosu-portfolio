@@ -1,0 +1,42 @@
+:root {
+    --white: #ffffff;
+    --main-color-gradient-1: #fff0f3;
+    --main-color-gradient-2: #ffccd5;
+    --main-color-gradient-3: #ffb3c1;
+    --main-color-gradient-4: #ff8fa3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.body-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.about {
+    background-color: var(--white);
+}
+.career {
+    background-color: var(--main-color-gradient-1);
+}
+.skills {
+    background-color: var(--main-color-gradient-2);
+}
+.works {
+    background-color: var(--main-color-gradient-3);
+}
+.contacts {
+    background-color: var(--main-color-gradient-4);
+}
+
+footer {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--white);
+}
