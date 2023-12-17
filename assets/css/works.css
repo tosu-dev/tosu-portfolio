@@ -54,6 +54,21 @@
     object-fit: cover;
 }
 
+.projects .card .tags {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.projects .card .tags .tag {
+    margin: 2px 4px;
+    background-color: var(--main-color-gradient-4);
+    border-radius: 12px;
+    color: var(--white);
+    padding: 4px 8px;
+}
+
 .projects .card .name {
     margin-bottom: 0;
 }
