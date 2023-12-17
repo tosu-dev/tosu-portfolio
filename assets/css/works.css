@@ -1,0 +1,65 @@
+.projects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.projects .card {
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 12px;
+    flex-direction: column;
+    margin: 24px 0;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.projects .card-face {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.projects .card .front {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projects .card .back {
+    transform: rotateY(180deg);
+    left: 0;
+    top: -100%;
+}
+
+.projects .card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.projects .card .preview {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.projects .card .name {
+    margin-bottom: 0;
+}
+
+.projects .card .date {
+    font-style: italic;
+}
+
+
