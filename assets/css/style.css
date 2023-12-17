@@ -50,39 +50,9 @@ p, li {
     z-index: 10;
 }
 
-/* ##### ABOUT ##### */
-.about {
-    background-color: var(--white);
-}
-.about .presentation {
-    max-width: 60vw;
-}
-.about-pp {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 36px;
-}
-.about-name {
-    font-size: 4em;
-    margin: 0;
-}
-.about-short-description {
-    color: var(--gray);
-    font-style: italic;
-    font-size: 1em;
-}
-
 /* ##### CAREER ##### */
 .career {
     background-color: var(--main-color-gradient-1);
-}
-.career-timeline > div {
-    border: 1px solid black;
-}
-.career-list {
-    text-align: left;
 }
 
 /* ##### SKILLS ##### */

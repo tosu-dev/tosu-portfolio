@@ -1,0 +1,26 @@
+.about {
+    background-color: var(--white);
+}
+
+.about .presentation {
+    max-width: 60vw;
+}
+
+.about .presentation .pp {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+
+.about .presentation .name {
+    font-size: 4em;
+    margin: 0;
+}
+
+.about .presentation .short {
+    color: var(--gray);
+    font-style: italic;
+    font-size: 1em;
+}
