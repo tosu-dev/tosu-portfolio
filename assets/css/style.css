@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+    --black: #000000;
+    --gray: #1b1b1b;
+    --white: #ffffff;
+    --main-color-gradient-1: #fff0f3;
+    --main-color-gradient-2: #ffccd5;
+    --main-color-gradient-3: #ffb3c1;
+    --main-color-gradient-4: #ff8fa3;
+}
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+p, li {
+    font-size: 1.4em;
+}
+
+.body-section {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.body-section .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+/* ##### CAREER ##### */
+.career {
+    background-color: var(--main-color-gradient-1);
+}
+
+/* ##### SKILLS ##### */
+.skills {
+    background-color: var(--main-color-gradient-2);
+}
+
+/* ##### WORKS ##### */
+.works {
+    background-color: var(--main-color-gradient-3);
+}
+
+/* ##### CONTACTS ##### */
+.contacts {
+    background-color: var(--main-color-gradient-4);
+}
+
+/* ##### ABOUT ##### */
+footer {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--white);
+}
