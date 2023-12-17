@@ -24,3 +24,8 @@
     font-style: italic;
     font-size: 1em;
 }
+
+.about .presentation .welcome {
+    font-size: 2em;
+    margin: 64px 0 32px 0;
+}
