@@ -1,0 +1,53 @@
+.body-section {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.body-section .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+    fill-opacity: 1;
+}
+
+.body-section > div {
+    margin-top: 10%;
+}
+
+
+.body-section.about {
+    background-color: var(--white);
+}
+
+.body-section.works .wave {
+    fill: var(--white);
+}
+.body-section.works {
+    background-color: var(--main-color-gradient-1);
+}
+
+.body-section.career .wave {
+    fill: var(--main-color-gradient-1);
+}
+.body-section.career {
+    background-color: var(--main-color-gradient-2);
+}
+
+.body-section.contacts .wave {
+    fill: var(--main-color-gradient-2);
+}
+.body-section.contacts {
+    background-color: var(--main-color-gradient-3);
+}

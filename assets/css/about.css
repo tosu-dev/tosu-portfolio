@@ -1,9 +1,6 @@
-.about {
-    background-color: var(--white);
-}
-
 .about .presentation {
     max-width: 60vw;
+    margin-top: 0;
 }
 
 .about .presentation .pp {
