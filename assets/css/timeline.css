@@ -22,7 +22,6 @@
     position: relative;
     background-color: inherit;
     width: 50%;
-    text-wrap: wrap;
 }
 
 /* circle */
@@ -55,7 +54,7 @@
     top: 22px;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: 31px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
@@ -69,14 +68,14 @@
     top: 22px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 31px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
 }
 
 .timeline .right::after {
-    left: -16px;
+    left: -14px;
 }
 
 .timeline .container .content {
