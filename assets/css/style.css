@@ -50,6 +50,10 @@ p, li {
     z-index: 10;
 }
 
+.body-section > div {
+    margin-top: 10%;
+}
+
 /* ##### CAREER ##### */
 .career {
     background-color: var(--main-color-gradient-1);
