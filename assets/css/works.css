@@ -25,7 +25,6 @@
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-
 }
 
 .projects .card .front {
@@ -75,6 +74,11 @@
 }
 
 .projects .card .date {
+    font-style: italic;
+    display: block;
+}
+
+.projects .card .link {
     font-style: italic;
 }
 
