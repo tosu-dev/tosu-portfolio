@@ -8,7 +8,7 @@
     background-color: var(--white);
     padding: 32px;
     border-radius: 50%;
-    transition: transform .3s, box-shadow .3s;
+    transition: all .2s;
 }
 
 .contacts-container .contact:hover {

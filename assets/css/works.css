@@ -15,8 +15,9 @@
     flex-direction: column;
     margin: 24px 0;
     cursor: pointer;
+    border: 2px solid var(--white);
     position: relative;
-    transition: transform 1s;
+    transition: transform 1s, border .2s;
     transform-style: preserve-3d;
 }
 
