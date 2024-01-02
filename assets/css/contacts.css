@@ -1,0 +1,23 @@
+.contacts-container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.contacts-container .contact {
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 50%;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.contacts-container .contact:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 4px 4px var(--black);
+}
+
+.contacts-container .contact .logo {
+    width: 98px;
+    height: 98px;
+}
+

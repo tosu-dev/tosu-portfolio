@@ -20,12 +20,17 @@
     transform-style: preserve-3d;
 }
 
+.projects .card:hover {
+    border: 2px solid var(--main-color-gradient-4)
+}
+
 .projects .card-face {
     position: relative;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
 }
+
 
 .projects .card .front {
     left: 50%;
