@@ -8,6 +8,9 @@ Ce projet ainsi que le code est très simple, c'est surtout pour mettre en avant
 
 Merci ! <3
 
+### TODO
+- [ ] Responsive
+
 ### Idées à implémenter
 - [ ] Carrousel pour les images des projets
 - [ ] Carte étendue en modal pour les projets
