@@ -35,12 +35,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    text-wrap: balance;
+    overflow: hidden;
 }
 
 .projects .card .back {
     transform: rotateY(180deg);
     left: 0;
     top: -100%;
+
+    overflow: auto;
 }
 
 .projects .card.is-flipped {
