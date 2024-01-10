@@ -14,15 +14,25 @@
 .about .presentation .name {
     font-size: 4em;
     margin: 0;
+    position: relative;
+}
+
+.about .presentation .name::after {
+    content: "(aka tosu-dev)";
+    font-size: 0.25em;
+    font-style: italic;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
 }
 
 .about .presentation .short {
     color: var(--gray);
     font-style: italic;
-    font-size: 1em;
+    font-size: 1.6em;
 }
 
 .about .presentation .welcome {
-    font-size: 2em;
-    margin: 64px 0 32px 0;
+    font-size: 3em;
+    margin: 96px 0 32px 0;
 }
