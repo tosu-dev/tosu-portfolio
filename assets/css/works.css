@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: start;
+    z-index: 10;
 }
 
 .projects .card {
@@ -70,6 +71,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .projects .card .tags .tag {
@@ -92,5 +94,4 @@
 .projects .card .link {
     font-style: italic;
 }
-
 
