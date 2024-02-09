@@ -2,7 +2,7 @@
     width: 100%;
     height: fit-content;
     min-height: 100%;
-    padding: 100px;
+    padding: 20px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -27,6 +27,7 @@
 }
 
 
+/* WAVES */
 .body-section.about {
     background-color: var(--white);
 }

@@ -1,6 +1,7 @@
 .timeline {
     position: relative;
-    min-width: 800px;
+    /* min-width: 800px; */
+    width: 100%;
     width: fit-content;
     margin: 0 auto;
     text-align: start;
@@ -22,6 +23,8 @@
     position: relative;
     background-color: inherit;
     width: 50%;
+    min-width: 340px;
+    z-index: 10;
 }
 
 /* circle */
@@ -95,5 +98,38 @@
     color: var(--gray);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-size: 1em;
+    font-size: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+    .timeline .container {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .timeline .left {
+        left: 0;
+    }
+    
+    .timeline .right {
+        left: 0;
+        transform: translate(0px); /* Reset */
+    }
+
+    .timeline .container::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+
+
+    /* arrow */
+    .timeline .left::before {
+        display: none;
+    }
+
+    /* arrow */
+    .timeline .right::before {
+        display: none;
+    }
+  }

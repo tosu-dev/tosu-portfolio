@@ -1,6 +1,7 @@
 .contacts-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 60%;
 }
 
@@ -9,6 +10,7 @@
     padding: 32px;
     border-radius: 50%;
     transition: all .2s;
+    margin: 20px;
 }
 
 .contacts-container .contact:hover {
