@@ -1,38 +1,76 @@
 .about .presentation {
-    max-width: 60vw;
+    width: 100%;
+    max-width: 100%;
     margin-top: 0;
 }
 
+.about .presentation .me {
+    margin: 40px;
+}
+
+.about .presentation .text {
+    width: 60%;
+    margin: 0px auto;
+}
+
 .about .presentation .pp {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+    min-width: 100px;
+    min-height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 36px;
 }
 
 .about .presentation .name {
-    font-size: 4em;
-    margin: 0;
+    font-size: 6vmax;
     position: relative;
+    width: fit-content;
+    margin: auto;
 }
 
-.about .presentation .name::after {
-    content: "(aka tosu-dev)";
-    font-size: 0.25em;
+.about .presentation .name .aka {
+    font-size: 0.25rem;
     font-style: italic;
     font-weight: normal;
-    position: absolute;
     bottom: 0;
+    width: max-content;
 }
 
 .about .presentation .short {
     color: var(--gray);
     font-style: italic;
-    font-size: 1.6em;
+    font-size: 2.5vmax;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 .about .presentation .welcome {
-    font-size: 3em;
+    font-size: 3rem;
     margin: 96px 0 32px 0;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.about .presentation .description {
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .about .presentation .text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about .presentation .name {
+        font-size: 4vmax;
+    }
+    .about .presentation .short {
+        font-size: 2.2vmax;
+    }
 }

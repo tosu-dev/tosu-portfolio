@@ -3,6 +3,11 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
 :root {
     --black: #000000;
     --gray: #1b1b1b;
@@ -23,15 +28,22 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: var(--white);
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
 }
 
 p, li {
-    font-size: 1.4em;
+    font-size: 1.8vmax;
 }
 
 footer {
     width: 100%;
     height: 25vh;
     background-color: var(--white);
+}
+
+/* max-font-size */
+@media screen and (min-width: 1200px) {
+    p, li {
+        font-size: 1.4rem;
+    }
 }
