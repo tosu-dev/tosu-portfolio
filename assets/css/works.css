@@ -10,7 +10,7 @@
 .projects .card {
     width: 30%;
     min-width: 240px;
-    height: 480px;
+    height: 440px;
     padding: 20px;
     background-color: var(--white);
     border-radius: 12px;
@@ -61,10 +61,14 @@
 }
 
 .projects .card .preview {
+    background-color: var(--main-color-gradient-0);
+    border-radius: 12px;
     width: auto;
     height: auto;
-    aspect-ratio: 4/3;
+    max-height: 220px;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    /* margin: auto; */
 }
 
 .projects .card .tags {
@@ -76,15 +80,16 @@
 }
 
 .projects .card .tags .tag {
-    margin: 2px 4px;
-    background-color: var(--main-color-gradient-4);
     border-radius: 12px;
+    background-color: var(--main-color-gradient-4);
     color: var(--white);
     padding: 4px 8px;
+    margin: 4px 8px 4px 0;
 }
 
 .projects .card .name {
     margin: 0;
+    font-size: 1.8vmax;
 }
 
 .projects .card .date {
@@ -92,7 +97,23 @@
     display: block;
 }
 
+.projects .card .info {
+    text-overflow: ellipsis;
+}
+
 .projects .card .link {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
     font-style: italic;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.projects .card .link:hover {
+    font-style: normal;
+    font-weight: bold;
 }
 
