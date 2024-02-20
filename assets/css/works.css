@@ -110,6 +110,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    color: var(--main-color-gradient-4)
 }
 
 .projects .card .link:hover {
