@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="assets/css/works.css">
     <link rel="stylesheet" href="assets/css/contacts.css">
     <link rel="stylesheet" href="assets/css/image-viewer.css">
+    <link rel="stylesheet" href="assets/css/slideshow.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 
-    <script src="scripts/jquery-3.7.1.min.js"></script>
-    <script src="scripts/script.js"></script>
 </head>
 <body>
     <!-- ##### SECTIONS ##### -->
@@ -48,7 +48,17 @@
             <!-- Ninja Pigame -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/ninja_pigame.PNG" alt="ninja pigame">
+                    <div class="preview-slideshow slideshow" slideshow-name="0">
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/ninja_pigame.PNG" alt="ninja pigame">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/beauvaisis.PNG" alt="ninja pigame">
+                        </div>
+                          <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(event, -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(event, 1)">&#10095;</a>
+                    </div>
                     <div class="tags">
                         <span class="tag">Personnel</span>
                         <span class="tag">GameDev</span>
@@ -73,7 +83,17 @@
             <!-- Game of Life (John Conway <3) -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/game-of-life.PNG" alt="Game of Life">
+                    <div class="preview-slideshow slideshow" slideshow-name="1">
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/game-of-life.PNG" alt="Game of Life">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/beauvaisis.PNG" alt="ninja pigame">
+                        </div>
+                          <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(event, -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(event, 1)">&#10095;</a>
+                    </div>
                     <div class="tags">
                         <span class="tag">Personnel</span>
                         <span class="tag">Pygame</span>
@@ -96,7 +116,7 @@
             <!-- IUT - Brette Appli -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/iut.jpg" alt="Logo IUT de Paris - Rives de Seine">
+                    <img class="preview fade" src="assets/images/projects/iut.jpg" alt="Logo IUT de Paris - Rives de Seine">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Java</span>
@@ -119,7 +139,7 @@
             <!-- IUT Beauvaisis (SAE S4) -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
+                    <img class="preview fade" src="assets/images/projects/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -144,7 +164,7 @@
             <!-- NDI - Terra Idle -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/terra_idle.PNG" alt="Logo Terra Idle">
+                    <img class="preview fade" src="assets/images/projects/terra_idle.PNG" alt="Logo Terra Idle">
                     <div class="tags">
                         <span class="tag">Nuit de l'Info</span>
                         <span class="tag">Web</span>
@@ -169,7 +189,7 @@
             <!-- IUT - CinInfo -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/cinInfo.PNG" alt="Projet CinInfo">
+                    <img class="preview fade" src="assets/images/projects/cinInfo.PNG" alt="Projet CinInfo">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -192,7 +212,7 @@
             <!-- IUT - e-contact -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/e-contact.PNG" alt="Projet e-contact">
+                    <img class="preview fade" src="assets/images/projects/e-contact.PNG" alt="Projet e-contact">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -215,7 +235,7 @@
             <!-- JDB - Hackathon 2020 -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/jdb_hackathon_2020.PNG" alt="Jehan de Beauce Hackathons 2020">
+                    <img class="preview fade" src="assets/images/projects/jdb_hackathon_2020.PNG" alt="Jehan de Beauce Hackathons 2020">
                     <div class="tags">
                         <span class="tag">Lycée</span>
                         <span class="tag">Python</span>
@@ -239,7 +259,7 @@
             <!-- JDB - Hackathon 2021 -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/jdb_hackathon_2021.PNG" alt="Jehan de Beauce Hackathons 2021">
+                    <img class="preview fade" src="assets/images/projects/jdb_hackathon_2021.PNG" alt="Jehan de Beauce Hackathons 2021">
                     <div class="tags">
                         <span class="tag">Lycée</span>
                         <span class="tag">Python</span>
@@ -365,5 +385,9 @@
         <span class="close">&times;</span>
         <img class="modal-content" id="full-image">
     </div>
+
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
