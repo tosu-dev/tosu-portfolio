@@ -68,12 +68,12 @@
     max-height: 220px;
     aspect-ratio: 1/1;
     object-fit: cover;
-    transition: transform 1s;
+    transition: 0.3s;
     /* margin: auto; */
 }
 
 .projects .card .preview:hover {
-    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .projects .card .tags {
