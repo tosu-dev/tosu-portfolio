@@ -171,7 +171,7 @@
             <!-- IUT Beauvaisis (SAE S4) -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview fade" src="assets/images/projects/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
+                    <img class="preview fade" src="assets/images/projects/beauvaisis/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -206,7 +206,6 @@
                         <a class="slideshow-prev">&#10094;</a>
                         <a class="slideshow-next">&#10095;</a>
                     </div>
-                    
                     <div class="tags">
                         <span class="tag">Nuit de l'Info</span>
                         <span class="tag">Web</span>
@@ -231,7 +230,17 @@
             <!-- IUT - CinInfo -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview fade" src="assets/images/projects/cinInfo.PNG" alt="Projet CinInfo">
+                    <div class="slideshow" slideshow-name="cin-info">
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/cininfo/cinInfo.PNG" alt="Projet CinInfo">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/cininfo/cinema.PNG" alt="Projet CinInfo">
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
+                    
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -439,8 +448,12 @@
     </section>
 
     <div id="image-viewer">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="full-image">
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="full-image">
+        </div>
+        
     </div>
 
 
