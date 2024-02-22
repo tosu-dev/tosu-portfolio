@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="assets/css/works.css">
     <link rel="stylesheet" href="assets/css/contacts.css">
     <link rel="stylesheet" href="assets/css/image-viewer.css">
+    <link rel="stylesheet" href="assets/css/slideshow.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 
-    <script src="scripts/jquery-3.7.1.min.js"></script>
-    <script src="scripts/script.js"></script>
 </head>
 <body>
     <!-- ##### SECTIONS ##### -->
@@ -48,7 +48,16 @@
             <!-- Ninja Pigame -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/ninja_pigame.PNG" alt="ninja pigame">
+                    <div class="slideshow" slideshow-name="ninja-pigame">
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/ninja_pigame/ninja_pigame-1.PNG" alt="Ninja Pigame">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/ninja_pigame/ninja_pigame-2.PNG" alt="ninja Pigame">
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
                     <div class="tags">
                         <span class="tag">Personnel</span>
                         <span class="tag">GameDev</span>
@@ -93,13 +102,56 @@
                 </div>
             </div>
 
+            <!-- Descolar -->
+            <div class="card">
+                <div class="card-face front">
+                    <div class="slideshow" slideshow-name="descolar">
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/descolar/Loading.png" alt="Icone Descolar">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/descolar/Inscription.png" alt="Icone Descolar">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/descolar/Home.png" alt="Icone Descolar">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/descolar/MyProfil.png" alt="Icone Descolar">
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">IUT</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Php</span>
+                        <span class="tag">Equipe</span>
+                    </div>
+                    <div class="info">
+                        <h2 class="name">Descolar</h2>
+                        <span class="date">2023-2024</span>
+                        <a class="link" href="javascript:void(0);">Privé sur Jetbrains Space</a>
+                    </div>
+                </div>
+                <div class="card-face back">
+                    <p class="description">
+                        Réseau social mobile pour les étudiants de l'Université de Paris Cité.<br>
+                        Ce projet en équipe, développé sur l'année complète du BUT3, a pour but de réunir les étudiants
+                        autour d'un réseau social sans prise de tête.<br><br>
+                        Je me suis occupé particulièrement du design sur Figma et du développement mobile en Flutter.
+                    </p>
+                </div>
+            </div>
+
             <!-- IUT - Brette Appli -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/iut.jpg" alt="Logo IUT de Paris - Rives de Seine">
+                    <img class="preview fade" src="assets/images/projects/iut.jpg" alt="Logo IUT de Paris - Rives de Seine">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Java</span>
+                        <span class="tag">Equipe</span>
                     </div>
                     <div class="info">
                         <h2 class="name">Brette Appli</h2>
@@ -119,7 +171,7 @@
             <!-- IUT Beauvaisis (SAE S4) -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
+                    <img class="preview fade" src="assets/images/projects/beauvaisis/beauvaisis.PNG" alt="Logo IUT de Paris - Rives de Seine">
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -144,7 +196,16 @@
             <!-- NDI - Terra Idle -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/terra_idle.PNG" alt="Logo Terra Idle">
+                    <div class="slideshow" slideshow-name="terra-idle">
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/terra_idle/terra_idle.PNG" alt="Logo Terra Idle">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview" src="assets/images/projects/terra_idle/tetris.PNG" alt="404 Tetris Page">
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
                     <div class="tags">
                         <span class="tag">Nuit de l'Info</span>
                         <span class="tag">Web</span>
@@ -169,7 +230,17 @@
             <!-- IUT - CinInfo -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/cinInfo.PNG" alt="Projet CinInfo">
+                    <div class="slideshow" slideshow-name="cin-info">
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/cininfo/cinInfo.PNG" alt="Projet CinInfo">
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/cininfo/cinema.PNG" alt="Projet CinInfo">
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
+                    
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -192,7 +263,22 @@
             <!-- IUT - e-contact -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/e-contact.PNG" alt="Projet e-contact">
+                    <div class="slideshow" slideshow-name="e-contact">
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/e-contact/logo.PNG" alt="Projet e-contact">                        </div>
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/e-contact/login.PNG" alt="Projet e-contact"> 
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/e-contact/profil.PNG" alt="Projet e-contact"> 
+                        </div>
+                        <div class="slide fade">
+                            <img class="preview fade" src="assets/images/projects/e-contact/friend.PNG" alt="Projet e-contact"> 
+                        </div>
+                        <a class="slideshow-prev">&#10094;</a>
+                        <a class="slideshow-next">&#10095;</a>
+                    </div>
+                    
                     <div class="tags">
                         <span class="tag">IUT</span>
                         <span class="tag">Web</span>
@@ -215,7 +301,7 @@
             <!-- JDB - Hackathon 2020 -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/jdb_hackathon_2020.PNG" alt="Jehan de Beauce Hackathons 2020">
+                    <img class="preview fade" src="assets/images/projects/jdb_hackathon_2020.PNG" alt="Jehan de Beauce Hackathons 2020">
                     <div class="tags">
                         <span class="tag">Lycée</span>
                         <span class="tag">Python</span>
@@ -239,7 +325,7 @@
             <!-- JDB - Hackathon 2021 -->
             <div class="card">
                 <div class="card-face front">
-                    <img class="preview" src="assets/images/projects/jdb_hackathon_2021.PNG" alt="Jehan de Beauce Hackathons 2021">
+                    <img class="preview fade" src="assets/images/projects/jdb_hackathon_2021.PNG" alt="Jehan de Beauce Hackathons 2021">
                     <div class="tags">
                         <span class="tag">Lycée</span>
                         <span class="tag">Python</span>
@@ -271,44 +357,6 @@
 
         <div class="timeline">
             <div class="container left">
-              <div class="content">
-                <h2 class="title">Collège Val de Voise</h2>
-                <span class="years">2013-2018</span>
-                <ul>
-                    <li>Découverte de la programmation en autodidacte avec Youtube et Scratch</li>
-                    <li>Tout premier script : Juste prix en VBS</li>
-                    <li>Création de jeux diverses avec Scratch</li>
-                </ul>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2 class="title">Lycée Jehan de Beauce</h2>
-                <span class="years">2018-2021</span>
-                <ul>
-                    <li>Baccalauréat général mention "Très Bien"</li>
-                    <li>Spécialité Mathématiques et NSI</li>
-                    <li>Participation à des Hackathons</li>
-                    <li>Formation autodidacte avec Youtube et OpenClassroom</li>
-                    <li>Création de jeux en Pygame</li>
-                    <li>Plugin Minecraft en Java</li>
-                </ul>
-              </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                  <h2 class="title">IUT de Paris - Rives de Seine</h2>
-                  <span class="years">2021-2024</span>
-                  <ul>
-                    <li>BUT Informatique</li>
-                    <li>Parcours A - Réalisation d'applications: conception, développement et validation</li>
-                    <li>Alternance en 2ème et 3ème année dans l'entreprise Linedata</li>
-                    <li>Participation à la "Nuit De l'Info" les 3 années</li>
-                    <li>Réalisation d'applications en équipe</li>
-                  </ul>
-                </div>
-              </div>
-            <div class="container right">
                 <div class="content">
                     <h2 class="title">Alternance Linedata</h2>
                     <span class="years">2022-2024</span>
@@ -321,7 +369,45 @@
                     </ul>
                 </div>
             </div>
-          </div>
+            <div class="container right">
+                <div class="content">
+                  <h2 class="title">IUT de Paris - Rives de Seine</h2>
+                  <span class="years">2021-2024</span>
+                  <ul>
+                    <li>BUT Informatique</li>
+                    <li>Parcours A - Réalisation d'applications: conception, développement et validation</li>
+                    <li>Alternance en 2ème et 3ème année dans l'entreprise Linedata</li>
+                    <li>Participation à la "Nuit De l'Info" les 3 années</li>
+                    <li>Réalisation d'applications en équipe</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                  <h2 class="title">Lycée Jehan de Beauce</h2>
+                  <span class="years">2018-2021</span>
+                  <ul>
+                      <li>Baccalauréat général mention "Très Bien"</li>
+                      <li>Spécialité Mathématiques et NSI</li>
+                      <li>Participation à des Hackathons</li>
+                      <li>Formation autodidacte avec Youtube et OpenClassroom</li>
+                      <li>Création de jeux en Pygame</li>
+                      <li>Plugin Minecraft en Java</li>
+                  </ul>
+                </div>
+              </div>
+            <div class="container right">
+              <div class="content">
+                <h2 class="title">Collège Val de Voise</h2>
+                <span class="years">2013-2018</span>
+                <ul>
+                    <li>Découverte de la programmation en autodidacte avec Youtube et Scratch</li>
+                    <li>Tout premier script : Juste prix en VBS</li>
+                    <li>Création de jeux diverses avec Scratch</li>
+                </ul>
+              </div>
+            </div>
+        </div>
     </section>
 
     <!-- CONTACTS -->
@@ -363,7 +449,15 @@
 
     <div id="image-viewer">
         <span class="close">&times;</span>
-        <img class="modal-content" id="full-image">
+        <div class="modal-content">
+            <img id="full-image">
+        </div>
+        
     </div>
+
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script type="module" src="scripts/projects.js"></script>
 </body>
 </html>

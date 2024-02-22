@@ -63,7 +63,7 @@
 .projects .card .preview {
     z-index: 15;
     border-radius: 12px;
-    width: auto;
+    width: 100%;
     height: auto;
     max-height: 220px;
     aspect-ratio: 1/1;
@@ -73,7 +73,7 @@
 }
 
 .projects .card .preview:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .projects .card .tags {
