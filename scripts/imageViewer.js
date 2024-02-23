@@ -1,42 +1,39 @@
-// TODO : Allow slideshows
+import { setSlides, plusSlides } from "./slideshow.js";
 
-let image_viewer = $('#image-viewer');
-let image_viewer_close = $('#image-viewer .close');
-let image_viewer_fullimage = $('#full-image');
-let zoom = 1;
+let image_viewer = $("#image-viewer");
+let image_viewer_close = $("#image-viewer .close");
+let image_viewer_content = $("#image-viewer .modal-content")
+
 
 image_viewer_close.click(function() {
     image_viewer.hide();
 });
 
-image_viewer.bind('mousewheel DOMMouseScroll', function(event) 
-{
-    if(event.ctrlKey == true)
-    {
-        event.preventDefault();
-        if(event.originalEvent.deltaY < 0) { // UP
-            zoom += 0.1;
-            zoom = Math.min(4, zoom);
-        }
-        else { // DOWN
-            zoom -= 0.1,
-            zoom = Math.max(0.5, zoom);
-        }
-        zoomImage();
-    }
-});
-
-function zoomImage() {
-    image_viewer_fullimage.css("transform", `translate(-50%, -50%) scale(${zoom})`);
-}
 
 /**
- * Show  the full image in the image viewer
- * @param {HTML Object} image 
+ * Show the content in the modal (like an image or a slideshow)
+ * @param {HTML Element} content 
  */
-export function showImage(image) {
-    zoom = 1;
-    zoomImage();
-    image_viewer_fullimage.attr("src", $(image).attr("src"));
+export function showContent(content) {
+    let newContent = content.cloneNode(true);
+
+    // if slideshow
+    if (newContent.className.includes("slideshow")) {
+        // change name
+        $(newContent).attr("slideshow-name", "image-viewer-slideshow");
+        // set slides
+        setSlides("image-viewer-slideshow", $(newContent).find(".slide"));
+        // onclick event because it is a clone content
+        $(newContent).children(".slideshow-prev").click(function(e) {
+            e.stopPropagation();
+            plusSlides(e, -1);
+        });
+        $(newContent).children(".slideshow-next").click(function(e) {
+            e.stopPropagation();
+            plusSlides(e, 1);
+        });
+    }
+
+    image_viewer_content.html(newContent);
     image_viewer.show();
 }

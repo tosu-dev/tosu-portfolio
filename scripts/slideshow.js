@@ -15,6 +15,28 @@ Slideshow HTML :
 
 */
 
+/**
+ * Change the slide of a slideshow by its name
+ * @param {String} name : slideshow name
+ * @param {*} slides
+ */
+export function setSlides(name, slides) {
+    slideshows.forEach(slideshow => {
+        if (slideshow.name === name) {
+            slideshow.slides = slides;
+        }
+    });
+}
+
+/**
+ * Pass n slides of a slideshow
+ * @param {Event} e 
+ * @param {Int} n : The number of slides you want to pass
+ */
+export function plusSlides(e, n) {
+    let slideshow = getSlideshowByName($(e.target).parent().attr("slideshow-name"));
+    showSlide(slideshow, slideshow.current + n);
+}
 
 /**
  * Add a raw slideshow to the collection
@@ -30,16 +52,7 @@ function addSlideshow(rawSlideshow) {
     showSlide(slideshow, slideshow.current);
 }
 
-/**
- * Pass n slides of a slideshow
- * @param {Event} e 
- * @param {Int} n : The number of slides you want to pass
- */
-function plusSlides(e, n) {
-    console.log(e);
-    let slideshow = getSlideshowByName($(e.target).parent().attr("slideshow-name"));
-    showSlide(slideshow, slideshow.current + n);
-}
+
 
 /**
  * Get a slideshow object by his name
@@ -56,8 +69,9 @@ function getSlideshowByName(name) {
  * @param {Int} n : The number of the slide you want to show
  */
 function showSlide(slideshow, n) {
-    n %= slideshow.slides.length;
-    slideshow.current = Math.abs(n);
+    if (n < 0) n = slideshow.slides.length - 1;
+    else if (n >= slideshow.slides.length) n = 0;
+    slideshow.current = n;
     for (let i = 0; i < slideshow.slides.length; i++) {
         $(slideshow.slides[i]).hide();
     }

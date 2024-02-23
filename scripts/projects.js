@@ -1,4 +1,4 @@
-import { showImage } from "./imageViewer.js";
+import { showContent } from "./imageViewer.js";
 
 /**
  * Flip a card thanks to the class "is-flipped"
@@ -15,7 +15,8 @@ function flipCard(card) {
 
 let project_cards = $(".projects .card");
 let project_card_links = $(".projects .card .link");
-let project_card_previews = $(".projects .card .preview")
+let project_card_previews = $(".projects .card .card-face.front > .preview");
+let project_card_slideshows =  $(".projects .card .card-face.front > .slideshow");
 
 project_cards.click(function() {
     flipCard($(this));
@@ -27,5 +28,10 @@ project_card_links.click(function(e) {
 
 project_card_previews.click(function(e) {
     e.stopPropagation();
-    showImage($(this));
+    showContent(this);
+});
+
+project_card_slideshows.click(function(e) {
+    e.stopPropagation();
+    showContent(this);
 });
