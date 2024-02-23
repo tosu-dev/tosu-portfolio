@@ -16,9 +16,22 @@ Slideshow HTML :
 */
 
 /**
+ * Change the current slide of a slideshow by its name
+ * @param {String} name : slideshow name
+ * @param {Int} current 
+ */
+export function setCurrentSlide(name, current) {
+    slideshows.forEach(slideshow => {
+        if (slideshow.name === name) {
+            slideshow.current = current;
+        }
+    });
+}
+
+/**
  * Change the slide of a slideshow by its name
  * @param {String} name : slideshow name
- * @param {*} slides
+ * @param {HTML Element} slides
  */
 export function setSlides(name, slides) {
     slideshows.forEach(slideshow => {
@@ -39,6 +52,15 @@ export function plusSlides(e, n) {
 }
 
 /**
+ * Get a slideshow object by his name
+ * @param {String} name
+ * @returns The slideshow object
+ */
+export function getSlideshowByName(name) {
+    return slideshows.find(s => s.name === name);
+}
+
+/**
  * Add a raw slideshow to the collection
  * @param {HTML} rawSlideshow : The HTML Object
  */
@@ -50,17 +72,6 @@ function addSlideshow(rawSlideshow) {
     };
     slideshows.push(slideshow);
     showSlide(slideshow, slideshow.current);
-}
-
-
-
-/**
- * Get a slideshow object by his name
- * @param {String} name
- * @returns The slideshow object
- */
-function getSlideshowByName(name) {
-    return slideshows.find(s => s.name === name);
 }
 
 /**

@@ -1,4 +1,4 @@
-import { setSlides, plusSlides } from "./slideshow.js";
+import { setCurrentSlide, setSlides, getSlideshowByName, plusSlides } from "./slideshow.js";
 
 let image_viewer = $("#image-viewer");
 let image_viewer_close = $("#image-viewer .close");
@@ -23,6 +23,7 @@ export function showContent(content) {
         $(newContent).attr("slideshow-name", "image-viewer-slideshow");
         // set slides
         setSlides("image-viewer-slideshow", $(newContent).find(".slide"));
+        setCurrentSlide("image-viewer-slideshow", getSlideshowByName($(content).attr("slideshow-name")).current)
         // onclick event because it is a clone content
         $(newContent).children(".slideshow-prev").click(function(e) {
             e.stopPropagation();
