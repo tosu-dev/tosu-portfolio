@@ -2,24 +2,71 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
 }
 
-.contacts-container .contact {
+.contacts-container .item-contact a {
     background-color: var(--white);
     padding: 32px;
     border-radius: 50%;
     transition: all .2s;
     margin: 20px;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid var(--white);
+    overflow: hidden;
 }
 
-.contacts-container .contact:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 4px 4px var(--black);
+.contacts-container .item-contact a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
 }
 
-.contacts-container .contact .logo {
-    width: 98px;
-    height: 98px;
+.contacts-container .item-contact:hover a::before {
+    scale: 1 1;
 }
 
+.contacts-container .item-contact a i {
+    color: var(--logo-color);
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.contacts-container .item-contact a:hover i {
+    color: var(--white);
+    transform: rotateY(360deg);
+}
+
+.contacts-container .item-contact:nth-child(1) {
+    --bg-color: #24292e;
+    --logo-color: #24292e;
+}
+
+.contacts-container .item-contact:nth-child(2) {
+    --bg-color: #0077b5;
+    --logo-color:  #0077b5;
+}
+
+.contacts-container .item-contact:nth-child(3) {
+    --bg-color: #c71610;
+    --logo-color: #c71610;
+}
+
+.contacts-container .item-contact:nth-child(4) {
+    --bg-color: var(--main-color-gradient-4);
+    --logo-color: var(--main-color-gradient-4);
+
+}
