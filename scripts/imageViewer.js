@@ -1,13 +1,17 @@
 import { setCurrentSlide, setSlides, getSlideshowByName, plusSlides } from "./slideshow.js";
 
-let image_viewer = $("#image-viewer");
-let image_viewer_close = $("#image-viewer .close");
-let image_viewer_content = $("#image-viewer .modal-content")
+const image_viewer = $("#image-viewer");
+const image_viewer_close = $("#image-viewer .close");
+const image_viewer_content = $("#image-viewer .modal-content")
 
 
 image_viewer_close.click(function() {
     image_viewer.hide();
 });
+
+image_viewer.click(function() {
+    image_viewer.hide();
+})
 
 
 /**
@@ -15,7 +19,7 @@ image_viewer_close.click(function() {
  * @param {HTML Element} content 
  */
 export function showContent(content) {
-    let newContent = content.cloneNode(true);
+    const newContent = content.cloneNode(true);
 
     // if slideshow
     if (newContent.className.includes("slideshow")) {
@@ -37,4 +41,9 @@ export function showContent(content) {
 
     image_viewer_content.html(newContent);
     image_viewer.show();
+
+    const image_viewer_img = $("#image-viewer .modal-content img")
+    image_viewer_img.click(function(e) {
+        e.stopPropagation();
+    })
 }
